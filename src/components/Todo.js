@@ -40,6 +40,7 @@ export default function Todo(props){
       </div>
     </form>
   );
+  console.log(props.filter);
   const viewTemplate = (
     <div className="stack-small">
       <div className="c-cb">
@@ -49,7 +50,7 @@ export default function Todo(props){
             defaultChecked={props.completed}
             onChange={() => props.toggleTaskCompleted(props.id)}
           />
-          <label className="todo-label" htmlFor={props.id}>
+          <label className={props.completed && props.filter == "All" ? "todo-label strikethrough" : "todo-label"} htmlFor={props.id}>
             {props.name}
           </label>
         </div>

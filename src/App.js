@@ -62,6 +62,7 @@ function App(props) {
     toggleTaskCompleted={toggleTaskCompleted}
     deleteTask={deleteTask}
     editTask={editTask}
+    filter={filter}
   />
 ));
 

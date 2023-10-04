@@ -302,3 +302,7 @@ body {
 .c-cb > input[type="checkbox"]:checked + label::after {
   opacity: 1;
 }
+
+.strikethrough {
+  text-decoration: line-through;
+}
