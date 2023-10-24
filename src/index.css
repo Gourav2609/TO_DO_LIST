@@ -4,6 +4,7 @@
 *::after {
   box-sizing: border-box;
   /* background: grey; */
+  outline: none;
 }
 
 html {
